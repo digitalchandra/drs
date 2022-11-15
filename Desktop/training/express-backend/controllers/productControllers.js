@@ -1,17 +1,31 @@
-const returnAllProduct = (req,res)=>{
-    const {category} = req.query;
-    if(category){
-        const filteredProducts = productData.filter((product)=>{
-            return product.category === category
-        }) 
-        if(filteredProducts.length !==0){
-            res.json(filteredProducts)
-        } else{
-            res.send("category not fonund")
-        }
-    } else{
-        res.json(productData)
-    }
+const async = require('hbs/lib/async');
+const ProductModule = require('../models/productModel');
+const ProductModel = require('../models/productModel');
+
+const returnAllProduct = async (req,res)=>{
+
+
+    // this is the code for json data format .())
+    // const {category} = req.query;
+    // if(category){
+    //     const filteredProducts = productData.filter((product)=>{
+    //         return product.category === category
+    //     }) 
+    //     if(filteredProducts.length !==0){
+    //         res.json(filteredProducts)
+    //     } else{
+    //         res.send("category not fonund")
+    //     }
+    // } else{
+    //     res.json(productData)
+    // }
+    // form Data base Mongo DB
+
+    const productData = await ProductModule.find();
+   
+    res.json(productData);
+   
+
 };
  
 const returnSingleProduct =(req,res)=>{
