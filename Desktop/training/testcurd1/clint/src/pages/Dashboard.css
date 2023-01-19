@@ -1,0 +1,55 @@
+bac
+.tablehead{
+    background-color: #9cc4fb;
+    width: 100%;
+    text-align: left;
+    color: #050a79;
+}
+.table-data{
+    background-color: #a9c8f5;
+    width: 100%;
+    text-align: left;
+    color: #000bda;
+    padding: 10px;
+    margin-top: 10px;
+}
+.dashboard-nav{
+    background-color: #3501f1;
+    border-radius: 5px;
+}
+.dashboard-nav>ul>li{
+    text-align: left;
+    list-style:none;
+
+}
+.dashboard-nav>ul>li>a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+
+
+}
+.update{
+    background-color: #7b00fe;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border-right: 1px solid #fff;
+}
+.update>a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+.delete{
+    background-color: #fe0022;
+    padding: 5px;
+    border-radius: 3px;
+}
+.delete>a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 17px;
+}
