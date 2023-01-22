@@ -25,6 +25,28 @@
 // console.log(b,c)
 
 //Array Shift (remove frist element and return )
-let a = [1,2,3,4,5,6]
-let b = a.shift()
-console.log(a,b)
+// let a = [1,2,3,4,5,6]
+// let b = a.shift()
+// console.log(a,b)
+
+// delete array 
+
+// let a = [1,2,3,4,5,6,7,8,90];
+// delete a[7]
+// console.log(a)
+
+// Array Concatinate (combination of 2 array/ marge array)
+
+// let a= [10,20,30,40]
+// let b = [11,12,13,14]
+// let c = a.concat(b)
+// console.log(c)
+
+//array sort function alwauy short data if we need accending order the we need to use compaire()
+let compare = (c,d)=>{
+    return c-d;
+}
+
+let a =[1,121,32,3434,545,65,12,434,4655,4,2]
+a.sort(compare);
+console.log(a);
