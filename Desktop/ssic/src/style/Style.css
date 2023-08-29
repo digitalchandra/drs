@@ -1,0 +1,102 @@
+/* Primary Color #550661 */
+/* Secondary Color: #f74007 */
+
+.services{
+    background-color: #e6e6e6;
+    padding: 50px 0px;
+}
+.services-body{
+    background-color: #f1f1f1;
+}
+.services-title{
+    padding: 7px;
+   
+}
+.footer{
+    background-color: #550661;
+    color: #e6e6e6;
+    text-align: left;
+    padding: 30px 0px;
+}
+.copy-right{
+    background-color: #27022c;
+    color: #6b6b6b;
+    text-align: center;
+    padding: 10px 0px;
+}
+.home-about{
+    padding: 50px 0px;
+}
+.home-about-us{
+    text-align: left;
+}
+.home-about-us h4{
+    font-family: 'Poppins', sans-serif;
+
+}
+.home-about-us p{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #6b6b6b;
+}
+.nav-link{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #550661;
+}
+.nav-item a{
+    color: #550661;
+}
+.img-fornt{
+    background-color: #3648b38a !important;
+}
+.bg-dark-border{
+    border: none !important;
+}
+.services-title h2{
+    font-family: 'Poppins';
+    color: #6d7fd5;
+    font-size: 40px;
+}
+
+.services-title p{
+    color: #5765a9;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+.card-title-control{
+    position: relative;
+    top: 50%;
+}
+.card-title-control h5:hover{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.aboutjapan{
+    background: url(../images/banenr.jpg) no-repeat center fixed;;
+    background-size: cover;
+   
+    width: auto;
+}
+.overlay-japan{
+    background-color: #0c0267c9;
+    padding: 50px 0px;
+}
+.thin-title{
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.blod-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.japan p{
+    color: #e6e6e6;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 400;
+}
