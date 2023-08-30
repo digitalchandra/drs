@@ -19,17 +19,18 @@ export default function HomeServices() {
     <>
     <div className="services">
         <div className="container">
-            <div className="row">
+            
                 <div className="services-title">
                     <h2> TOP DESTINATION </h2>
                     <p>Take Advantage of Our Top-Notch Student Services from Highly Qualified Education Counselors and Visa Expert Teams</p>
                 </div>
+                <div className="row">
                 {
                     services?.map((services)=>{
                         return(
                             <>
                         
-                            <div className="col-md-4">
+                            <div className="col-md-3">
                             <div class="card bg-dark-border text-white">
                                     <img src={services.fimg_url} alt="" className='img-fluid' />
                                 <div class="card-img-overlay img-fornt">
