@@ -53,6 +53,7 @@
 }
 .bg-dark-border{
     border: none !important;
+    margin-top: 20px
 }
 .services-title h2{
     font-family: 'Poppins';
@@ -115,10 +116,18 @@
 .destination-card{
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.15) !important;
     border-radius: 16px 16px 16px 16px !important;
+    margin-top: 20px;
 }
+
 .destination-card:hover{
     border-radius: 16px;
     box-shadow: 5px 1px 15px 0px rgba(0,0,0,0.15) !important;
+}
+.destination-card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 .des-card{
     padding: 20px 5px;
@@ -139,6 +148,9 @@
 .blog-card img{
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 .blog-card img:hover{
     -webkit-transform: scale(1.1);
@@ -169,7 +181,7 @@
     border-radius: 5px 5px 0px 0px;
 }
 .blog-back h5{
-    font-size: 1.5rem;
+    font-size: 1.52em;
     color: #6d7fd5;
     font-family: 'Poppins';
     padding: 10px 5px;
@@ -181,4 +193,48 @@
 
 .home-slide1{
     padding: 10px 0px;
+}
+.slider img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.scard-img img{
+    height: 205px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.cat-banner{
+    background:url(../images/city.jpg)no-repeat center fixed;
+    background-size: cover;
+}
+.cat-banner-title{
+    background-color: rgba(16, 87, 180, 0.432);
+    padding: 50px 20px;
+    text-align: left;
+}
+.cat-banner-title h3{
+    color: #e6e6e6;
+    font-family: 'Poppins';
+}
+.cat-control img{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    
+}
+.services-cat-card{
+    margin-top: 20px;
+}
+.cat-over-image{
+    background-color: #021d419a;
+  
+}
+.cat-over-image a{
+    color: #e6e6e6;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-decoration: none;
+    
 }

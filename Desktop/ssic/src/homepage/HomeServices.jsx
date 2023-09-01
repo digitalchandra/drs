@@ -31,7 +31,7 @@ export default function HomeServices() {
                             <>
                         
                             <div className="col-md-3">
-                            <div class="card bg-dark-border text-white">
+                            <div class="card bg-dark-border scard-img text-white">
                                     <img src={services.fimg_url} alt="" className='img-fluid' />
                                 <div class="card-img-overlay img-fornt">
                                     <div className="card-title-control">

@@ -12,7 +12,7 @@ export default function HomeSlider() {
     const [slider, setSlider] = useState()
 
     useEffect(()=>{
-        let url =('https://ptccollection.com/wp-json/wl/v1/posts')
+        let url =('https://ptccollection.com/wp-json/wl/v1/posts?per_page=3')
         axios.get(url).then((res)=>{
             setSlider(res.data)
         });
