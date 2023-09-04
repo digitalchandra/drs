@@ -1,0 +1,40 @@
+
+.destination-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cat-destination{
+    margin-top: 20px;
+}
+.cat-destination img{
+    height: 225px;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+.aborad{
+    top: 60%;
+    position: relative;
+    right: 0;
+}
+.abroad-card-title{
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.abroad-short{
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #ffffff;
+    font-size: 17px;
+}
+.desti-country{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    overflow: hidde
+}
