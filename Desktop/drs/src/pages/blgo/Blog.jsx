@@ -10,7 +10,8 @@ import axios from 'axios'
 
 export default function Blog() {
 
-        const [blog, setBlog] = useState()
+        const [blog, setBlog] = useState([])
+        const [catblog, setCatblog] = useState([])
 
         useEffect(()=>{
             let url=('https://drs.edu.np/wp-json/wp/v2/posts?categories=6')
@@ -20,6 +21,12 @@ export default function Blog() {
             })
         },[])
 
+        useEffect(()=>{
+            let url=('https://drs.edu.np/wp-json/wp/v2/categories?slug=blogs')
+            axios.get(url).then((res)=>{
+                setCatblog(res.data)
+            })
+        })
   return (
 
     <>
@@ -27,11 +34,20 @@ export default function Blog() {
 
         <div className="blog-banner">
             <div class="card text-white">
-            <img class="card-img" src={Testbanner} alt="Card image"/>
+            <img class="img-fluid" src={Testbanner} alt="Card image"/>
                 <div class="card-img-overlay destination-banner">
                     <div className="aborad">
-                        <h5 class="abroad-card-title"> Latest Update </h5>
-                        <p class="abroad-short">Find the our gureenty Cources about differet Test Preparation</p>
+                        {
+                            catblog?.map((catblog)=>{
+                                return(
+                                    <>
+                                     <h5 class="abroad-card-title"> {catblog.name} </h5>
+                                     <p class="abroad-short">{catblog.description}</p>
+                                    </>
+                                )
+                            })
+                        }
+                       
                         
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import './Category.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios' 
-
+import { Link } from 'react-router-dom'
 export default function Destination() {
   const [destination, setDestination]=  useState()
    
@@ -30,7 +30,9 @@ export default function Destination() {
                         <div className="card text-white dest-img">
                           <img src={destination.fimg_url} alt="" />
                             <div className="card-img-overlay img-back destination-banner ">
-                            <h4 class="card-title"> {destination.title.rendered}  </h4>
+                            <div className="des-title">
+                            <Link to={`/category/${destination.id}`} > <h4 class="card-title"> {destination.title.rendered}  </h4> </Link>
+                            </div>
                           </div>
                         </div>
                       </div>

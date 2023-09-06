@@ -31,7 +31,7 @@ export default function Services() {
                                     <div class="card-img-overlay img-back">
                                     
                                         <div class="services-card-title"> 
-                                            <h2> {service.title.rendered} </h2>
+                                            <h4> {service.title.rendered} </h4>
                                         </div>
                                     
                                     </div>

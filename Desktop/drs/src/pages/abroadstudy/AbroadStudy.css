@@ -34,7 +34,23 @@
     position: relative;
     top: 50%;
     text-align: center;
+ 
+}
+.desti-country a{
+    font-family: 'Poppins';
+    font-weight: 400;
+    overflow: hidden;
+    color: antiquewhite;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desti-country a:hover{
     font-family: 'Poppins';
     font-weight: 600;
-    overflow: hidde
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.33rem;
+    text-decoration: none;
+    cursor: pointer;
 }

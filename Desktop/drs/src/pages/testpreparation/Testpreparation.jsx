@@ -32,7 +32,7 @@ export default function Testpreparation() {
     <Header/>
     <div className="testpreparation">
     <div class="card text-white">
-        <img class="card-img" src={Testbanner} alt="Card image"/>
+        <img class="img-fluid" src={Testbanner} alt="Card image"/>
             <div class="card-img-overlay destination-banner">
                 <div className="aborad">
                     {

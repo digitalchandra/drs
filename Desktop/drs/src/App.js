@@ -36,6 +36,8 @@ import Services from './pages/services/Services';
 import Resources from './pages/resources/Resources';
 import Testpreparation from './pages/testpreparation/Testpreparation';
 import Blog from './pages/blgo/Blog';
+import ServicesDetails from './detialspages/ServicesDetails.jsx'
+import AbroadStudydetails from './detialspages/AbroadStudydetails';
 
 function App() {
   return (
@@ -74,7 +76,8 @@ function App() {
             <Route path ="/resources" element={<Resources/>}/>
             <Route path ="/testpreparation" element={<Testpreparation/>}/>
             <Route path ="/blog" element={<Blog/>}/>
-
+            <Route path = "/category/:id" element={<ServicesDetails/>}/>
+            <Route path ="/services/:id" element={<AbroadStudydetails/>}/>
 
 
         </Routes>

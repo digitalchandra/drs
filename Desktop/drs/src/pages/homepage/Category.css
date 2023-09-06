@@ -52,7 +52,7 @@ padding: 100px 100px;
     object-fit: cover;
 }
 .img-back{
-    background-color: #1e3e99d1;
+    background-color: #163f45ad;
     text-align: center;
 }
 .service-card img{
@@ -85,7 +85,7 @@ padding: 100px 100px;
     
 }
 .destination-1{
-    background-color: #3d57a1b0;
+    background-color: #2a515773;
     padding: 50px 0px;
    
     font-family: 'Poppins', sans-serif;
@@ -129,6 +129,7 @@ padding: 100px 100px;
     height: 70px;
     width: 70px;
     border-radius: 100%;
+    object-fit: cover;
 }
 .review-box{
     background-color: #e5e7ef;
@@ -163,7 +164,7 @@ padding: 100px 100px;
 }
 
 .destination-banner{
-    background-color: #1e3e9987;
+    background-color: #163f45e0;
 }
 .cat-card{
     margin-top: 10px;
@@ -173,6 +174,51 @@ padding: 100px 100px;
 }
 .dest-img img{
     height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.des-title{
+    position: relative;
+    top: 50%;
+}
+.des-title a {
+    font-size: 1.5rem;
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.des-title a:hover {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.contact-title{
+    position: relative;
+    top: 60%;
+}
+.contact-img img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.contact-1{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+}
+.contact-content p{
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: #163f45;
+}
+.contact-content {
+    padding: 50px 30px;
+}
+.blog-img img{
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }
