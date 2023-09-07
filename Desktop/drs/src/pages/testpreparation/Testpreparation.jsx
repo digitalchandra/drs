@@ -8,9 +8,9 @@ import { useEffect } from 'react'
 import axios from 'axios'
 
 export default function Testpreparation() {
-    const [test,setTest] = useState()
+    const [test,setTest] = useState([])
 
-    const [testpre, setTestpre] = useState()
+    const [testpre, setTestpre] = useState([])
 
 
     useEffect(()=>{

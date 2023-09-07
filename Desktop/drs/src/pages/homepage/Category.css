@@ -222,3 +222,23 @@ padding: 100px 100px;
     width: 100%;
     object-fit: cover;
 }
+.slide-control img{
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+.slider-overlay{
+    background-color: #163f4578;
+}
+.slider-title{
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+.slider-title h5{
+    font-family: 'Poppins';
+    color: aliceblue;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 
 export default function Resources() {
-    const [resource, setResource] = useState()
+    const [resource, setResource] = useState([])
  
 
     useEffect(()=>{

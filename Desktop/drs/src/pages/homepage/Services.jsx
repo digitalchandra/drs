@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 
 export default function Services() {
-    const [service, setSevice] = useState()
+    const [service, setSevice] = useState([])
 
     useEffect(()=>{
         let url=('https://drs.edu.np/wp-json/wp/v2/posts?categories=4')

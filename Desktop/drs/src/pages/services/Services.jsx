@@ -10,9 +10,9 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function Services() {
-    const [services, setServices] = useState()
+    const [services, setServices] = useState([])
 
-    const [cat, setCat] = useState()
+    const [cat, setCat] = useState([])
 
 
     useEffect(()=>{

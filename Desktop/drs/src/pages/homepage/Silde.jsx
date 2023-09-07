@@ -5,8 +5,20 @@ import Slider from "react-slick";
 import Banner from '../../images/world.png'
 import Banner2 from '../../images/website2.jpg'
 import Banner3 from '../../images/3.jpg'
-export default function Silde() {
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
+import './Category.css'
 
+export default function Silde() {
+  const [slider, setSlider] = useState([])
+
+  useEffect(()=>{
+    let url=('https://drs.edu.np/wp-json/wp/v2/homeslider')
+    axios.get(url).then((res)=>{
+      setSlider(res.data)
+    })
+  },[])
   var settings = {
     dots: true,
     infinite: true,
@@ -20,15 +32,25 @@ export default function Silde() {
   return (
   <>
     <Slider {...settings}>
-          <div className="div">
-             <img src={Banner2} alt="" className='img-fluid' />
-          </div>
-          <div className="div">
-             <img src={Banner} alt="" className='img-fluid' />
-          </div>
-          <div className="div">
-              <img src={Banner3} alt="" className='img-fluid' />
-          </div>
+      {
+        slider?.map((slider)=>{
+          return(
+            <>
+              <div className="div card slide-control">
+                <img src={slider.thumbnial} alt="" className='img-fluid' />
+                  <div className="card-img-overlay slider-overlay">
+                    <div className="slider-title">
+                    <h5 className='card-title'>{slider.title.rendered}</h5>
+                    </div>
+                  </div>
+                
+              </div>
+            </>
+          )
+        })
+      }
+        
+   
    </Slider>
 
   </>
