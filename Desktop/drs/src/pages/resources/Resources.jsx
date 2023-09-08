@@ -13,7 +13,7 @@ export default function Resources() {
  
 
     useEffect(()=>{
-        let url=('https://drs.edu.np/wp-json/wp/v2/resource');
+        let url=('https://drs.edu.np/wp-json/wl/v1/resources');
         axios.get(url).then((res)=>{
             setResource(res.data)
         })
@@ -55,12 +55,12 @@ export default function Resources() {
                                         <div className="col-md-10 ">
                                             <div className="file">
                                                 <FilePdfFill/>
-                                            <span className='filetitle'> {resource.title.rendered} </span>
+                                            <span className='filetitle'> {resource.title} </span>
                                             </div>
                                     
                                             </div>
                                             <div className="col-md-2">
-                                                    <button className='btn btn-primary'><CloudArrowDown/> Download </button>
+                                                    <a className='btn btn-success' href={resource.file.url} target='blank' ><CloudArrowDown/> Download </a>
                                             </div>
                                     </div>
                                 </div>

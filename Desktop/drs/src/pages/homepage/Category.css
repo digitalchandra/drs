@@ -242,3 +242,18 @@ padding: 100px 100px;
     text-transform: uppercase;
     font-weight: 600;
 }
+.gallery-slider img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+.gallery{
+    padding: 50px 0px;
+}
+.gallery-title{
+    margin-top: 50px;
+    color: #1f3a84;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 25px;
+}

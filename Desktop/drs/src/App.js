@@ -1,5 +1,4 @@
 import './App.css'; 
-import Category from './pages/homepage/Category';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap'
 import Home from './pages/homepage/Home'
@@ -38,7 +37,7 @@ import Testpreparation from './pages/testpreparation/Testpreparation';
 import Blog from './pages/blgo/Blog';
 import ServicesDetails from './detialspages/ServicesDetails.jsx'
 import AbroadStudydetails from './detialspages/AbroadStudydetails';
-
+import Gallery from './pages/gallery/Gallery';
 function App() {
   return (
     <>
@@ -78,7 +77,7 @@ function App() {
             <Route path ="/blog" element={<Blog/>}/>
             <Route path = "/category/:id" element={<ServicesDetails/>}/>
             <Route path ="/services/:id" element={<AbroadStudydetails/>}/>
-
+            <Route path ="/gallery" element={<Gallery/>}/>
 
         </Routes>
     

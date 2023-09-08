@@ -17,7 +17,7 @@ export default function Contact() {
       setContact(res.data)
     })
   },[])
-
+  
 
   return (
     <>
