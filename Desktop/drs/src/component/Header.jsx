@@ -35,14 +35,17 @@ export default function Header() {
                     <Link className='nav-link'to="/testpreparation"> Test Preparation  </Link>
                   </li>
                   <li class="nav-item">
-                    <Link className='nav-link'to="/login"> Gallery</Link>
+                    <Link className='nav-link'to="/gallery"> Gallery</Link>
                     </li>
                     <li class="nav-item">
                     <Link className='nav-link' to="/blog"> Blog & News</Link>
                     
                     </li>
                     <li class="nav-item">
-                    <Link className='nav-link' to="/register"> Contact</Link>
+                    <Link className='nav-link' to="/about"> About Us</Link>
+                    </li>
+                    <li class="nav-item">
+                    <Link className='nav-link' to="/contact"> Contact</Link>
                     </li>
               </ul>
             

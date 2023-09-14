@@ -7,11 +7,12 @@ import Footer from '../../component/Footer'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
-    const [services, setServices] = useState()
+    const [services, setServices] = useState([])
 
-    const [cat, setCat] = useState()
+    const [cat, setCat] = useState([])
 
 
     useEffect(()=>{
@@ -34,7 +35,7 @@ export default function Services() {
     <div className="banner">
         
         <div class="card text-white">
-        <img class="card-img" src={BannerServices} alt="Card image"/>
+        <img class="img-fluid" src={BannerServices} alt="Card image"/>
             <div class="card-img-overlay destination-banner">
                 <div className="aborad">
                     {
@@ -68,7 +69,10 @@ export default function Services() {
 
                                         <div class="card-img-overlay destination-banner">
                                             <div className="desti-country">
+                                                <Link to={`/services/${services.id}`}>
                                                 <h5 class="card-title"> {services.title.rendered}</h5>
+                                                </Link>
+                                               
                                             </div>
                                     
                                         </div>

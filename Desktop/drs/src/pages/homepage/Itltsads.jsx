@@ -1,20 +1,46 @@
 import './Category.css'
+import { useState } from 'react'
+import { useEffect } from 'react'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export default function Itltsads() {
+
+  const [ielts, setIelts] = useState([])
+
+  useEffect(()=>{
+    let url = ('https://drs.edu.np/wp-json/wp/v2/ielts?per_page=1')
+    axios.get(url).then((res)=>{
+      setIelts(res.data)
+    })
+  })
+
   return (
     <>
     <div className="container">
         <div className="row">
-            <div className="ielts-ads">
-            <div class="card text-white">
-            <img src="https://i.pinimg.com/564x/ab/54/a8/ab54a8043d30a7c3bfd4aba6a167013b.jpg" alt="" className="img-fluid"/>
-            <div class="card-img-overlay img-back">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <h2 class="card-title"> IELTS  </h2>
-                <button className='btn btn-danger'> Learn More </button>
-            </div>
-            </div>
-            </div>
+          {
+            ielts?.map((ielts)=>{
+              return(
+                <>
+                  <div className="ielts-ads">
+                    <div class="card text-white">
+                      <img src={ielts.thumbnial} alt="" className="img-fluid"/>
+                      <div class="card-img-overlay img-back">
+                     
+                          <h2 class="card-title"> {ielts.title.rendered}  </h2>
+                          <Link to={''}> 
+                              <button className='btn btn-danger'> Learn More </button> 
+                          </Link>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+            })
+          }
+          
         </div>
     </div>
     </>

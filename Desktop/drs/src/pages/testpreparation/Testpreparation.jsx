@@ -8,9 +8,9 @@ import { useEffect } from 'react'
 import axios from 'axios'
 
 export default function Testpreparation() {
-    const [test,setTest] = useState()
+    const [test,setTest] = useState([])
 
-    const [testpre, setTestpre] = useState()
+    const [testpre, setTestpre] = useState([])
 
 
     useEffect(()=>{
@@ -32,7 +32,7 @@ export default function Testpreparation() {
     <Header/>
     <div className="testpreparation">
     <div class="card text-white">
-        <img class="card-img" src={Testbanner} alt="Card image"/>
+        <img class="img-fluid" src={Testbanner} alt="Card image"/>
             <div class="card-img-overlay destination-banner">
                 <div className="aborad">
                     {

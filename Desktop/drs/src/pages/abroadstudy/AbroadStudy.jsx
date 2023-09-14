@@ -1,6 +1,5 @@
 import React from 'react'
 import Catbanner  from '../../images/2.jpg'
-import DesImg from '../../images/card-1.png'
 import Header from '../../component/Header'
 import Footer from '../../component/Footer'
 import '../../pages/homepage/Category.css'
@@ -8,9 +7,9 @@ import './AbroadStudy.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
-
+import {Link} from 'react-router-dom'
 export default function AbroadStudy() {
-    const [abroad, setAbroad] = useState()
+    const [abroad, setAbroad] = useState([])
 
     useEffect(()=>{
         let url= ('https://drs.edu.np/wp-json/wp/v2/posts?categories=3')
@@ -24,7 +23,7 @@ export default function AbroadStudy() {
     <div className="banner">
         
         <div class="card text-white">
-        <img class="card-img" src={Catbanner} alt="Card image"/>
+        <img class="img-fluid" src={Catbanner} alt="Card image"/>
             <div class="card-img-overlay destination-banner">
                 <div className="aborad">
                     <h5 class="abroad-card-title">Abroad Study </h5>
@@ -49,7 +48,11 @@ export default function AbroadStudy() {
 
                                         <div class="card-img-overlay destination-banner">
                                             <div className="desti-country">
+                                                <p key={abroad.id}>
+                                                <Link to={`/category/${abroad.id}`} > 
                                                 <h5 class="card-title"> {abroad.title.rendered} </h5>
+                                                </Link>
+                                                </p>
                                             </div>
                                     
                                         </div>
